@@ -4,10 +4,10 @@ from random
 import random
 
 def wallis(itr):
-    ans = 2
+    ans = 1
     for n in range(1, itr+1)
         ans = ans*(4*n*n)/(4*n*n-1)
-    return answer
+    return answer*2
 
 def monte_carlo(itr):
     count = 0
