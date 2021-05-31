@@ -12,8 +12,8 @@ def wallis(itr):
 def monte_carlo(itr):
     count = 0
     for n in range(1, itr+1):
-        x = random()
-        y = random()
+        x = random.random()
+        y = random.random()
         dis = x*x + y*y
         if dis <= 1.000000000:
             count +=1
