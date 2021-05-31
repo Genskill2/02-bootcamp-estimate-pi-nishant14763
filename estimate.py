@@ -1,13 +1,12 @@
 import math
 import unittest
-from random 
 import random
 
 def wallis(itr):
-    ans = 1
-    for n in range(1, itr+1)
+    ans = 2
+    for n in range(1, itr+1):
         ans = ans*(4*n*n)/(4*n*n-1)
-    return ans*2
+    return ans
 
 def monte_carlo(itr):
     count = 0
@@ -15,10 +14,10 @@ def monte_carlo(itr):
         x = random.random()
         y = random.random()
         dis = x*x + y*y
-        if dis <= 1.000000000:
+        if dis**(1/2) <= 1.000000000:
             count +=1
     ans = 4*count/itr
-    return answer
+    return ans
 
 class TestWallis(unittest.TestCase):
     def test_low_iters(self):
