@@ -1,22 +1,23 @@
 import math
 import unittest
-from random import random
+from random 
+import random
 
-def wallis(itr_count: int):
+def wallis(itr):
     ans = 2
-    for n in range(1, itr_count+)
-        ans = (ans*4*n*n)/(4*n*n-1)
+    for n in range(1, itr+1)
+        ans = ans*(4*n*n)/(4*n*n-1)
     return answer
 
-def monte_carlo(itr_count:int):
+def monte_carlo(itr):
     count = 0
-    for n in range(1, itr_count+1):
+    for n in range(1, itr+1):
         x = random()
         y = random()
         dis = x*x + y*y
         if dis <= 1.000000000:
-            count+=1
-    ans = 4*count/itr_count
+            count +=1
+    ans = 4*count/itr
     return answer
 
 class TestWallis(unittest.TestCase):
